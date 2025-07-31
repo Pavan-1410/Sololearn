@@ -22,12 +22,17 @@ jobs:
     - name: Install dependencies
       run: npm install
 
-    - name: Run linting
+    - name: Run linting (optional)
       run: npm run lint
       continue-on-error: true
 
     - name: Build project
       run: npm run build
+
+    - name: Check build output
+      run: |
+        echo "✅ Frontend build completed successfully"
+        ls -la dist/
 
   backend-check:
     runs-on: ubuntu-latest
