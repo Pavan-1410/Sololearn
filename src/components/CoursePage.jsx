@@ -2,7 +2,7 @@ import React, { useState, useMemo, useEffect, useRef } from 'react';
 import { Brain, Code, Globe, Database, Layout } from 'lucide-react';
 import Navbar from "./NavBarP";
 import { Link } from "react-router-dom";
-import { exploreCourses } from "../data/coursesData"; // ✅ Correct import
+import { exploreCourses } from "../data/coursesdata";
 import ExploreCourseCard from './ExploreCourseCard';
 import { BookOpen, Trophy } from "lucide-react";
 import "./CoursePage.css"
